@@ -34,3 +34,6 @@ Framework/Externals/*
 !Framework/Externals/dear_imgui_addons/
 !Framework/Externals/dear_imgui_addons/imguinodegrapheditor/
 Media
+
+# cquery cache
+.cquery_cached_index/
