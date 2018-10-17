@@ -90,7 +90,7 @@ namespace Falcor
         auto sceneClass = pybind11::class_<Scene, Scene::SharedPtr>(m, "Scene");
 
         // RtScene
-#ifdef FALCOR_DXR
+#ifdef FALCOR_D3D12
         // RtSceneFlags
         auto rtScene = pybind11::enum_<RtBuildFlags>(m, "RtBuildFlags");
         rtScene.val(RtBuildFlags::None).val(RtBuildFlags::AllowUpdate).val(RtBuildFlags::AllowCompaction).val(RtBuildFlags::FastTrace).val(RtBuildFlags::FastBuild);
